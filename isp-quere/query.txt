@@ -1,0 +1,17 @@
+
+        //interface
+        $response = $client->qr('/interface/print');
+        //All ip print
+        $response = $client->query(['/ip/address/print'])->read();
+        // Build query
+        $response = $client->query('/system/resource/print')->read();
+        //Neighbor
+        $response = $client->query('ip/neighbor/print')->read();
+        //Log
+        $response = $client->query('/log/print')->read();
+        //Hotspot User
+        $response = $client->query('/ip/hotspot/user/profile/print')->read();
+        //System health
+        $response = $client->query('/system/health/print')->read();
+        //radius Print
+        $response = $client->qr('/radius/print');
